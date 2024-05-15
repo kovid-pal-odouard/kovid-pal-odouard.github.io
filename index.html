@@ -34,13 +34,12 @@
         .overlay-text {
             position: absolute;
             top: 10%; /* Adjust this value for vertical positioning */
-            left: 0%; /* Adjust this value for horizontal positioning */
+            left: 1.5%; /* Adjust this value for horizontal positioning */
             text-align: left;
             color: #e635f0;
             animation: textResize 4s infinite;
             line-height: 1em; /* Set a fixed line height */
             white-space: nowrap; /* Prevent text from wrapping */
-
         }
         .overlay-text h1 {
             font-family: 'Press Start 2P', sans-serif;
@@ -51,6 +50,16 @@
             font-family: 'Pixelon', sans-serif;
             margin: 10px 0 0 0;
             font-size: 1em;
+        }
+        .additional-text {
+            position: absolute;
+            top: 30%; /* Adjust this value for vertical positioning */
+            left: 1.5%; /* Adjust this value for horizontal positioning */
+            color: #e635f0;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 1em;
+            line-height: 1.5em;
+            max-width: 35%; /* Limit of how far it goes before wrapping */
         }
         @keyframes textResize {
             0%, 100% {
@@ -68,6 +77,9 @@
         <div class="overlay-text">
             <h1>KOVID PAL ODOUARD!</h1>
             <p>now has a website!</p>
+        </div>
+        <div class="additional-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, libero non eleifend viverra, velit purus posuere eros, id cursus dui justo ac sem.
         </div>
     </div>
 </body>
