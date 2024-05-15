@@ -63,20 +63,20 @@
         }
         .imagecaption {
             position: absolute;
-            left: 1.5%;
-            bottom: 5%; /* Adjust this value for vertical positioning */
-            color: #b5e9f5;
+            left: 0.5%;
+            bottom: 1%; /* Adjust this value for vertical positioning */
+            color: #ffffff;
             font-family: 'Pixelon', sans-serif;
             font-size: 1em;
         }
         .lil-message-text {
             position: absolute;
-            right: 1.5%;
+            left: 90%;
             bottom: 5%; /* Adjust this value for vertical positioning */
             color: #79e896;
             font-family: 'Pixelon', sans-serif;
             transform: rotate(25deg);
-            animation: textResizeRandom 4s infinite;
+            animation: textResizeRandom 3s infinite;
         }
         @keyframes textResize {
             0%, 100% {
@@ -94,18 +94,6 @@
                 font-size: 1em;
             }
         }
-    </style>
-    <script>
-        function setRandomAnimationDuration() {
-            const element = document.querySelector('.lil-message-text');
-            const randomDuration = Math.random() * 3 + 2; // Random duration between 2 and 5 seconds
-            element.style.animationDuration = `${randomDuration}s`;
-        }
-
-        window.onload = function() {
-            setRandomAnimationDuration();
-            setInterval(setRandomAnimationDuration, 100); // Update duration at the beginning of each loop
-        };
     </script>
 </head>
 <body>
