@@ -69,12 +69,30 @@
             font-family: 'Pixelon', sans-serif;
             font-size: 1em;
         }
+        .lil-message-text {
+            position: absolute;
+            left: 99%; /* Adjust this value for horizontal positioning */
+            bottom: 1%; /* Adjust this value for vertical positioning */
+            color: #79e896;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 0.5em;
+            transform: rotate(-35deg);
+            animation: lilTextResize 2s infinite;
+        }
         @keyframes textResize {
             0%, 100% {
                 font-size: 1.5em;
             }
             50% {
                 font-size: 2.5em;
+            }
+        }
+        @keyframes lilTextResize {
+            0%, 100% {
+                font-size: 0.5em;
+            }
+            50% {
+                font-size: 1em;
             }
         }
     </style>
@@ -91,6 +109,9 @@
         </div>
         <div class="imagecaption">
             Image: Accidental mewing session @ wash during the eclipse. Taken by QUINN KAMMER
+        </div>
+        <div class="lil-message-text">
+            yo jay, check out this leaf
         </div>
     </div>
 </body>
