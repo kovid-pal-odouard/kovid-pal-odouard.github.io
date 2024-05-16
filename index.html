@@ -57,11 +57,14 @@
             position: absolute;
             top: 22%; /* Adjust this value for vertical positioning */
             left: 1.5%; /* Adjust this value for horizontal positioning */
-            color: #e69410;
+            color: transparent; /* Make text transparent */
             font-family: 'Pixelon', sans-serif;
             font-size: 1.2em;
             line-height: 1.5em;
             max-width: 25%; /* Limit of how far it goes before wrapping */
+            text-shadow: 0 0 0 #fae828; /* Apply text shadow with desired color */
+            mix-blend-mode: difference; /* Blend mode to create contrast */
+            background-color: #c97c10; /* Highlight color */
         }
         .imagecaption {
             position: absolute;
