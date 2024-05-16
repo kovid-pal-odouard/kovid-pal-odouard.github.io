@@ -25,21 +25,23 @@
         }
         .container {
             position: relative;
+            width: 70%; /* Adjust container size to 70% of the viewport */
+            max-width: 70%;
         }
         img {
-            width: 70%; /* Adjust image size to 70% */
+            width: 100%; /* Image takes the full width of the container */
             height: auto;
             display: block;
         }
         .overlay-text {
             position: absolute;
-            top: 30%; /* Adjust this value for vertical positioning */
-            left: 20%; /* Adjust this value for horizontal positioning */
-            transform: translate(-50%, -50%);
+            top: 10%; /* Adjust this value for vertical positioning */
+            left: 1.5%; /* Adjust this value for horizontal positioning */
             text-align: left;
             color: #e635f0;
             animation: textResize 4s infinite;
             line-height: 1em; /* Set a fixed line height */
+            white-space: nowrap; /* Prevent text from wrapping */
         }
         .overlay-text h1 {
             font-family: 'Press Start 2P', sans-serif;
@@ -51,12 +53,49 @@
             margin: 10px 0 0 0;
             font-size: 1em;
         }
+        .additional-text {
+            position: absolute;
+            top: 22%; /* Adjust this value for vertical positioning */
+            left: 1.5%; /* Adjust this value for horizontal positioning */
+            color: #f2ca5a;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            max-width: 25%; /* Limit of how far it goes before wrapping */
+        }
+        .imagecaption {
+            position: absolute;
+            left: 0.5%;
+            bottom: 1%; /* Adjust this value for vertical positioning */
+            color: #ffffff;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 1em;
+        }
+        .lil-message-text {
+            position: absolute;
+            right: 0.5%; /* Adjust this value for horizontal positioning */
+            bottom: 6%; /* Adjust this value for vertical positioning */
+            color: #79e896;
+            text-align: center;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 0.5em;
+            transform: rotate(-35deg);
+            animation: lilTextResize 2s infinite;
+        }
         @keyframes textResize {
             0%, 100% {
-                font-size: 2em;
+                font-size: 1.5em;
             }
             50% {
-                font-size: 4em;
+                font-size: 2.5em;
+            }
+        }
+        @keyframes lilTextResize {
+            0%, 100% {
+                font-size: 0.6em;
+            }
+            50% {
+                font-size: 0.8em;
             }
         }
     </style>
@@ -67,6 +106,15 @@
         <div class="overlay-text">
             <h1>KOVID PAL ODOUARD!</h1>
             <p>now has a website!</p>
+        </div>
+        <div class="additional-text">
+            an archive to store / a place to share the things i create. to hell with corporation-constructed, algorithmically-arranged digital spaces! this digital space was made by a human who doesn't know how to code (with the help of chat gpt, lol). the principles are consistent, i swear! links to be added...
+        </div>
+        <div class="imagecaption">
+            Image: Accidental mewing session @ wash during the eclipse. Taken by QUINN KAMMER
+        </div>
+        <div class="lil-message-text">
+            yo jay, check out this leaf
         </div>
     </div>
 </body>
