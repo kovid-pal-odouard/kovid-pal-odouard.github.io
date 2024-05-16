@@ -7,38 +7,44 @@
     <style>
         @font-face {
             font-family: 'Press Start 2P';
-            src: url('press%20start.ttf') format('truetype');
+            src: url('press start.ttf') format('truetype');
         }
         @font-face {
             font-family: 'Pixelon';
             src: url('pixelon.ttf') format('truetype');
         }
-        }
+        
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f7edc1;
+            background-color: #f2ead3; /* Changed background color */
             margin: 0;
             padding: 0;
             font-family: 'Press Start 2P', sans-serif;
-            color: #52370f;
+            color: #543d0d; /* Changed text color */
         }
+        
+        .heading-text {
+            text-align: center; /* Center aligning */
+        }
+        
         .heading-text h1 {
-            font-family: 'Press Start 2P', sans-serif;
+            font-size: 50px; 
             margin: 0;
-            font-size: 2em;
         }
+        
         .heading-text p {
             font-family: 'Pixelon', sans-serif;
             margin: 10px 0 0 0;
-            font-size: 1 em;
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <div class = "heading-text"
-    <h1>ART FROM MAMARONECK, NY: 2023</h1>
-    <p>by Kovid Pal Odouard!</p>
+    <div class="heading-text"> <!-- Added closing bracket -->
+        <h1>ART FROM MAMARONECK, NY: 2023</h1>
+        <p>by Kovid Pal Odouard!</p>
+    </div> 
 </body>
 </html>
