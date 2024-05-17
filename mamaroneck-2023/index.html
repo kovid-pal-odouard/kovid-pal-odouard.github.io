@@ -78,7 +78,8 @@
         }
 
         .detail-images img {
-            width: calc(1080px - 7.5px);
+            /* Calculate the width based on the number of images and margins */
+            width: calc((1080px - (15px * (n - 1))) / n);
             height: auto;
             object-fit: cover;
         }
