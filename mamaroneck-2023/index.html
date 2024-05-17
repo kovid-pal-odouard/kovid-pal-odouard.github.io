@@ -7,11 +7,11 @@
     <style>
         @font-face {
             font-family: 'Press Start 2P';
-            src: url('press start.ttf') format('truetype');
+            src: url('/mamaroneck-2023/press start.ttf') format('truetype');
         }
         @font-face {
             font-family: 'Pixelon';
-            src: url('pixelon.ttf') format('truetype');
+            src: url('/mamaroneck-2023/pixelon.ttf') format('truetype');
         }
         
         body {
@@ -54,6 +54,12 @@
             width: calc(30% + 15px);
         }
 
+        .detail-images img {
+            width: calc(50% - 7.5px);
+            height: auto;
+            object-fit: cover;
+        }
+
         .caption {
             text-align: left;
             font-family: 'Pixelon', sans-serif;
@@ -72,6 +78,16 @@
             font-size: 1.2em;
             margin: 5px 0 0 0;
         }
+
+        .caption a {
+            color: #86BBBD;
+            text-shadow: 1.5px 1.5px #86BBBD;
+            text-decoration: none;
+        }
+
+        .caption a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -79,14 +95,14 @@
         <h1>ART FROM MAMARONECK, NY: 2023</h1>
         <p>by Kovid Pal Odouard!</p>
     </div>
-    <img class="main-image" src="/mamaroneck-2023/thoughtful_foreigner.jpg" alt="portrait of a thoughtful foreigner" style="width: 30%;">
+    <img class="main-image" src="/mamaroneck-2023/thoughtful_foreigner.jpg" alt="portrait of a thoughtful foreigner" style="width: 50%;">
     <div class="detail-images">
-        <img src="/mamaroneck-2023/thoughtful_foreigner_detail.jpg" alt="detail - portrait of a thoughtful foreigner" style="width: calc(50% - 7.5px);">
-        <img src="/mamaroneck-2023/thoughtful_foreigner_process.jpg" alt="detail - portrait of a thoughtful foreigner" style="width: calc(50% - 7.5px);">
+        <img src="/mamaroneck-2023/thoughtful_foreigner_detail.jpg" alt="detail - portrait of a thoughtful foreigner">
+        <img src="/mamaroneck-2023/thoughtful_foreigner_process.jpg" alt="detail - portrait of a thoughtful foreigner">
     </div>
     <div class="caption">
         <h2>portrait of a thoughtful foreigner</h2>
-        <p>late july 2022: a portrait of an acquaintance of mine. micron pen, a modified crappy chisel-tipped marker, acrylic. my favorite of a couple of portraits i did in the year and a half since august 2021, when aranxa ortega did a little portrait of me at 59 rivoli. i thought it was so magical that the act of putting lines on a page could reproduce a life in that way; that an image of a life could be captured and preserved by my own careful motions with a pen. i found that, in all my moments doing portraiture, there was always this one beautifully jarring instant when i filled in the eyes... all of a sudden, the marks i had put down returned the warmth of my gaze; all of a sudden, there she was.</p>
+        <p>late july 2022: a portrait of an acquaintance of mine. micron pen, a modified crappy chisel-tipped marker, acrylic. my favorite of a couple of portraits i did in the year and a half since august 2021, when <a href="https://aranxaortega.wixsite.com/arts/bio">aranxa ortega</a> did a little portrait of me at 59 rivoli. i thought it was so magical that the act of putting lines on a page could reproduce a life in that way; that an image of a life could be captured and preserved by my own careful motions with a pen. i found that, in all my moments doing portraiture, there was always this one beautifully jarring instant when i filled in the eyes... all of a sudden, the marks i had put down returned the warmth of my gaze; all of a sudden, there she was.</p>
     </div>
 </body>
 </html>
