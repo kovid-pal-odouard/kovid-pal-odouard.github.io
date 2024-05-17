@@ -15,6 +15,7 @@
         }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -58,7 +59,7 @@
             position: absolute;
             top: 22%; /* Adjust this value for vertical positioning */
             left: 1.5%; /* Adjust this value for horizontal positioning */
-            color: #fae828; /* Make text transparent */
+            color: #fae828;
             font-family: 'Pixelon', sans-serif;
             font-size: 1.2em;
             line-height: 1.5em;
@@ -83,6 +84,45 @@
             font-size: 0.5em;
             transform: rotate(-35deg);
             animation: lilTextResize 2s infinite;
+        }
+        .link-container {
+            position: absolute;
+            top: calc(100% + 10px); /* 10px below the container */
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .link-element {
+            position: relative;
+            display: inline-block;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 1.2em;
+            color: #fF2EAD3;
+            text-decoration: none;
+            text-shadow: 3px 3px #86BBBD;
+        }
+        .link-element::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #D0B884;
+            width: calc(100% + 16px); /* 8px wider on each side */
+            height: calc(100% + 16px); /* 8px taller on each side */
+            z-index: -2;
+        }
+        .link-element::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #543D0D;
+            width: calc(100% + 24px); /* Additional 8px for the shadow */
+            height: calc(100% + 24px); /* Additional 8px for the shadow */
+            z-index: -3;
+            box-shadow: 4px 4px #543D0D;
         }
         @keyframes textResize {
             0%, 100% {
@@ -118,6 +158,11 @@
         <div class="lil-message-text">
             yo jay, check out this leaf
         </div>
+    </div>
+    <div class="link-container">
+        <a href="https://kovid-pal-odouard.github.io/mamaroneck-2023/" class="link-element">
+            Visit Mamaroneck 2023
+        </a>
     </div>
 </body>
 </html>
