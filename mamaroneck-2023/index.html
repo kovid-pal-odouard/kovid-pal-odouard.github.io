@@ -37,12 +37,7 @@
             text-shadow: 5.5px 2px #bd9b55;
         }
         
-        .heading-text p {
-            font-family: 'Pixelon', sans-serif;
-            margin: 8px 0 0 0;
-            font-size: 34px;
-        }
-
+        .heading-text p,
         .heading-text a {
             font-family: 'Pixelon', sans-serif;
             margin: 8px 0 0 0;
@@ -52,16 +47,8 @@
         }
 
         .heading-text a:hover {
-            font-family: 'Pixelon', sans-serif;
-            margin: 8px 0 0 0;
             text-shadow: 2px 2px #bd9b55;
             text-decoration: underline;
-            color: #543d0d;
-        }
-
-        .heading-text p,
-        .heading-text a {
-            font-size: 34px;
         }
 
         .main-image {
@@ -78,8 +65,9 @@
         }
 
         .detail-images img {
-            /* Calculate the width based on the number of images and margins */
-            width: calc((1080px - (15px * (n - 1))) / n);
+            /* Calculate the width based on the number of images */
+            /* Adjust the margin for the first and last images */
+            width: calc((1080px - 15px * (n - 1)) / var(--n));
             height: auto;
             object-fit: cover;
         }
@@ -89,7 +77,7 @@
             font-family: 'Pixelon', sans-serif;
             margin-top: 10px;
             color: #543d0d;
-            width: 50%; /* Set width to match main image */
+            width: 1080px; /* Set width to match main image */
         }
 
         .caption h2 {
@@ -123,10 +111,8 @@
     <div class="detail-images">
         <img src="/mamaroneck-2023/thoughtful_foreigner_detail.jpg" alt="detail - portrait of a thoughtful foreigner">
         <img src="/mamaroneck-2023/thoughtful_foreigner_process.jpg" alt="detail - portrait of a thoughtful foreigner">
+        <!-- Add more detail images here -->
     </div>
     <div class="caption" style="margin-bottom: 50px;">
         <h2>portrait of a thoughtful foreigner</h2>
-        <body>late july 2022: a portrait of an acquaintance of mine. micron pen, a modified crappy chisel-tipped marker, acrylic. my favorite of a couple of portraits i did in the year and a half since august 2021, when <a href="https://aranxaortega.wixsite.com/arts/bio" class="link-element" target="_blank">aranxa ortega</a> did a little portrait of me at <a href="https://www.59rivoli.org/homepage/" class="link-element" target="_blank">59 rivoli</a>. i thought it was so magical that the act of putting lines on a page could reproduce a life in that way; that an image of a life could be captured and preserved by my own careful motions with a pen. i found that, in all my moments doing portraiture, there was always this one beautifully jarring instant when i filled in the eyes... all of a sudden, the marks i had put down returned the warmth of my gaze; all of a sudden, there she was.</body>
-    </div>
-</body>
-</html>
+        <body>late july 2022: a portrait of an acquaintance of mine. micron pen, a modified crappy chisel-tipped marker, acrylic. my favorite of a couple of portraits i did in the year and a half since august 2021, when <a href="https://aranxaortega.wixsite.com/arts/bio" class="link-element" target="_blank">aranxa ortega</a> did a little portrait of me at <a href="https://www.59rivoli.org/homepage/" class="link-element" target="_blank">59 rivoli</a>. i thought it was so magical that the act of putting lines on a page could reproduce a life in that way; that an image of a life could be
