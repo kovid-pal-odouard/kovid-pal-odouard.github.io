@@ -22,7 +22,8 @@
             margin: 0;
             background-color: #b5e9f5;
             position: relative;
-            overflow: auto; /* Make the site scrollable */
+            overflow-y: auto; /* Make the site scrollable vertically */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         .container {
             position: relative;
@@ -97,18 +98,21 @@
             font-family: 'Pixelon', sans-serif;
             font-size: 1.2em;
             color: #f2EAD3;
-            text-shadow: 3px 3px #86BBBD;
+            text-shadow: 2px 2px #86BBBD;
             padding: 8px; /* Add padding for background */
             background-color: #D0B884;
+            text-decoration: none; /* Remove underline from text */
         }
         .link-element::after {
             content: '';
             position: absolute;
+            top: 2px;
+            left: 8px;
             background-color: #543D0D;
-            width: calc(100% + 8px); /* 4px wider on each side for the shadow */
-            height: calc(100% + 8px); /* 4px taller on each side for the shadow */
+            width: 100%; /* Adjust width to cover full element */
+            height: 100%; /* Adjust height to cover full element */
             z-index: -1;
-            box-shadow: 4px 4px #543D0D;
+            box-shadow: 8px 2px #543D0D;
         }
         @keyframes textResize {
             0%, 100% {
