@@ -67,7 +67,7 @@
         .detail-images img {
             /* Calculate the width based on the number of images */
             /* Adjust the margin for the first and last images */
-            width: calc((1080px - 15px * (n - 1)) / var(--n));
+            width: calc((1080px - 15px * (var(--n) - 1)) / var(--n));
             height: auto;
             object-fit: cover;
         }
@@ -108,7 +108,7 @@
         <p>by <a href="https://kovid-pal-odouard.github.io" class="link-element">Kovid Pal Odouard</a>!</p>
     </div>
     <img class="main-image" src="/mamaroneck-2023/thoughtful_foreigner.jpg" alt="portrait of a thoughtful foreigner">
-    <div class="detail-images">
+    <div class="detail-images" style="--n: 2;">
         <img src="/mamaroneck-2023/thoughtful_foreigner_detail.jpg" alt="detail - portrait of a thoughtful foreigner">
         <img src="/mamaroneck-2023/thoughtful_foreigner_process.jpg" alt="detail - portrait of a thoughtful foreigner">
         <!-- Add more detail images here -->
