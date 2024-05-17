@@ -40,7 +40,7 @@
             left: 1.5%; /* Adjust this value for horizontal positioning */
             text-align: left;
             color: #e635f0;
-            animation: textResize 1s infinite;
+            animation: textResize 4s infinite;
             line-height: 1em; /* Set a fixed line height */
             white-space: nowrap; /* Prevent text from wrapping */
         }
@@ -59,7 +59,7 @@
             position: absolute;
             top: 22%; /* Adjust this value for vertical positioning */
             left: 1.5%; /* Adjust this value for horizontal positioning */
-            color: #fae828;
+            color: #fae828; /* Text color */
             font-family: 'Pixelon', sans-serif;
             font-size: 1.2em;
             line-height: 1.5em;
@@ -88,9 +88,8 @@
         .link-container {
             position: absolute;
             top: calc(100% + 10px); /* 10px below the container */
-            display: flex;
-            justify-content: center;
-            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .link-element {
             position: relative;
@@ -100,28 +99,27 @@
             color: #fF2EAD3;
             text-decoration: none;
             text-shadow: 3px 3px #86BBBD;
+            padding: 8px; /* Add padding for background */
         }
         .link-element::before {
             content: '';
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
             background-color: #D0B884;
             width: calc(100% + 16px); /* 8px wider on each side */
             height: calc(100% + 16px); /* 8px taller on each side */
-            z-index: -2;
+            z-index: -1;
         }
         .link-element::after {
             content: '';
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
             background-color: #543D0D;
             width: calc(100% + 24px); /* Additional 8px for the shadow */
             height: calc(100% + 24px); /* Additional 8px for the shadow */
-            z-index: -3;
+            z-index: -2;
             box-shadow: 4px 4px #543D0D;
         }
         @keyframes textResize {
