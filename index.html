@@ -16,13 +16,13 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #b5e9f5;
             position: relative;
-            overflow: hidden;
+            overflow: auto; /* Make the site scrollable */
         }
         .container {
             position: relative;
@@ -86,10 +86,10 @@
             animation: lilTextResize 2s infinite;
         }
         .link-container {
-            position: absolute;
-            top: calc(100% + 10px); /* 10px below the container */
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 10px; /* Margin to position the link slightly below the image */
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         .link-element {
             position: relative;
@@ -100,17 +100,7 @@
             text-decoration: none;
             text-shadow: 3px 3px #86BBBD;
             padding: 8px; /* Add padding for background */
-        }
-        .link-element::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: #D0B884;
-            width: calc(100% + 16px); /* 8px wider on each side */
-            height: calc(100% + 16px); /* 8px taller on each side */
-            z-index: -1;
         }
         .link-element::after {
             content: '';
@@ -119,9 +109,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #543D0D;
-            width: calc(100% + 24px); /* Additional 8px for the shadow */
-            height: calc(100% + 24px); /* Additional 8px for the shadow */
-            z-index: -2;
+            width: calc(100% + 8px); /* 4px wider on each side for the shadow */
+            height: calc(100% + 8px); /* 4px taller on each side for the shadow */
+            z-index: -1;
             box-shadow: 4px 4px #543D0D;
         }
         @keyframes textResize {
@@ -161,7 +151,7 @@
     </div>
     <div class="link-container">
         <a href="https://kovid-pal-odouard.github.io/mamaroneck-2023/" class="link-element">
-            Visit Mamaroneck 2023
+            art from mamaroneck 2023
         </a>
     </div>
 </body>
