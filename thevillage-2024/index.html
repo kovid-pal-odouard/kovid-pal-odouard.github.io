@@ -50,6 +50,56 @@
             text-shadow: 2px 2px #D5A454;
             text-decoration: underline;
         }
+
+        .main-image {
+            margin-top: 15px;
+            width: 1080px;
+            height: auto;
+        }
+
+        .detail-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 1080px;
+        }
+
+        .detail-images img {
+            /* Calculate the width based on the number of images */
+            /* Adjust the margin for the first and last images */
+            width: calc((1080px - 15px * (var(--n) - 1)) / var(--n));
+            height: auto;
+            object-fit: cover;
+        }
+
+        .caption {
+            text-align: left;
+            font-family: 'Pixelon', sans-serif;
+            margin-top: 10px;
+            color: #543d0d;
+            width: 1080px; /* Set width to match main image */
+        }
+
+        .caption h2 {
+            font-size: 1.7em;
+            text-shadow: 2px 2px #bd9b55;
+            margin: 0;
+        }
+
+        .caption body {
+            font-size: 1.2em;
+            margin: 5px 0 0 0;
+        }
+
+        .caption a {
+            color: #9D6381;
+            text-shadow: 1.5px 1.5px #86BBBD;
+            text-decoration: none;
+        }
+
+        .caption a:hover {
+            text-decoration: underline;
+        }
     </style>
     </head>
 <body>
