@@ -13,7 +13,10 @@
             font-family: 'Pixelon';
             src: url('/mamaroneck-2023/pixelon.ttf') format('truetype');
         }
-
+        @font-face {
+            font-family: 'Garamond';
+            src: url('garamond.ttf') format('truetype');
+        }         
         body {
             display: flex;
             flex-direction: column;
@@ -50,10 +53,71 @@
             text-shadow: 2px 2px #D5A454;
             text-decoration: underline;
         }
-      </style>
-  </head>
-  <body>
-      <div class="heading-text">
-          <h1>STUFF I MADE IN THE VILLAGE, NY ~ 2024</h1>
-          <p>by <a href="https://kovid-pal-odouard.github.io" class="link-element">Kovid Pal Odouard</a>!</p>
-      </div>
+        
+        .essay {
+            font-family: 'Garamond', sans-serif;
+            margin-top: 10px;
+            width: 1080px;
+        }
+
+        .essay h1 {
+            font-size: 30px;
+            color: #AE3179;
+            text-align: center;
+            margin: 0;
+        }
+
+        .essay p.body {
+            font-size: 16px;
+            color: #AE3179;
+            text-align: left;
+            margin: 5px 0 0 0;
+        }
+
+        .essay p.italic {
+            font-style: italic;
+            text-align: left;
+        }
+
+        .essay p.indent {
+            text-indent: 25px;
+            text-align: left;
+        }
+
+        .essay p.h2 {
+            font-style: bold
+            text-align: center;
+            text-align: left;
+        }
+
+        .essay a {
+            color: #84D6DD;
+            text-shadow: 1.5px 1.5px #E7EFC1;
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        .essay a:hover {
+            color: #E7EFC1;
+            text-shadow: 1.5px 1.5px #84D6DD;
+            text-decoration: underline;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-text">
+        <h1>STUFF I MADE IN THE VILLAGE, NY ~ 2024</h1>
+        <p>by <a href="https://kovid-pal-odouard.github.io" class="link-element">Kovid Pal Odouard</a>!</p>
+    </div>
+
+    <div class="essay">
+        <h1>Revolutionary Cultures and their Literatures: A Comparative Analysis</h1>
+        <p class="indent">Much of the scholarly literature on revolutions seeks to answer the question: why there and at that time, rather than most other places at most other times?</p>
+        <p> Oppression, inequality, poverty, and arbitrary rule have been aspects of human societies near-ubiquitously for centuries, yet the vast majority of the time those conditions alone are not enough to lead people to revolution. Thus, when revolutions do occur, it is difficult to think about them in terms of their local context alone – scholarly approaches to revolution, therefore, tend to have some element of justifying (in the causal sense, not the moral sense) why a revolution happened </p>
+        <p class="italic">there</p>
+        <p> and</p>
+        <p class="italic">then.</p>
+    </div>
+</body>
+</html>
