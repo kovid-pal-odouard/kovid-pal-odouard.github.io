@@ -148,6 +148,38 @@
             z-index: -1;
             box-shadow: 3px 3px #D5A454;
         }
+        }
+        .link3-container {
+            margin-top: 10px; /* Margin to position the link slightly below the image */
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .link3-element {
+            position: relative;
+            display: inline-block;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 20px;
+            color: #CA9849;
+            text-shadow: 2px 2px #B07643;
+            padding: 8px; /* Add padding for background */
+            background-color: #104547;
+            text-decoration: none; /* Remove underline from text */
+        }
+        .link3-element:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        .link3-element::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background-color: #84D6DD;
+            width: 100%; /* Adjust width to cover full element */
+            height: 100%; /* Adjust height to cover full element */
+            z-index: -1;
+            box-shadow: 3px 3px #dad4ed;
+        }
         @keyframes textResize {
             0%, 100% {
                 font-size: 1.5em;
@@ -193,7 +225,7 @@
             stuff from the village ~2024
         </a>
     </div>
-    <div class="link2-container">
+    <div class="link3-container">
         <a href="https://kovid-pal-odouard.github.io/weeksville-2024/" class="link2-element" target="_blank">
             something new!!!
         </a>
