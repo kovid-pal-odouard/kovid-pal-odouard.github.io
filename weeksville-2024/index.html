@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kovid pal odouard: the village 2024</title>
+    <style>
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: url('/mamaroneck-2023/press start.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Pixelon';
+            src: url('/mamaroneck-2023/pixelon.ttf') format('truetype');
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #104547;
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', sans-serif;
+            color: #CA9849;
+        }
+
+        .heading-text {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .heading-text h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 5.5px 2px #B07643, 8px 4px #B07643;
+        }
+
+        .heading-text p,
+        .heading-text a {
+            font-family: 'Pixelon', sans-serif;
+            margin: 8px 0 0 0;
+            font-size: 34px;
+            text-decoration: none;
+            color: #B07643;
+        }
+
+        .heading-text a:hover {
+            text-shadow: 2px 2px #DAD4ED;
+            text-decoration: underline;
+        }
+
+        .main-image {
+            margin-top: 15px;
+            width: 1080px;
+            height: auto;
+        }
+
+        .detail-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 1080px;
+        }
+
+        .detail-images img {
+            width: calc((1080px - 15px * (var(--n) - 1)) / var(--n));
+            height: auto;
+            object-fit: cover;
+        }
+
+        .caption {
+            text-align: left;
+            font-family: 'Pixelon', sans-serif;
+            margin-top: 10px;
+            width: 720px;
+        }
+
+        .caption h2 {
+            font-size: 32px;
+            color: #DAD4ED;
+            text-shadow: 2px 2px #692041, 3.5px 3.5px #B07643;
+            margin: 0;
+        }
+
+        .caption p {
+            font-size: 16px;
+            color: #CA9849;
+            margin: 5px 0 0 0;
+        }
+
+        .caption a {
+            color: #DAD4ED;
+            text-shadow: 1.5px 1.5px #692041;
+            text-decoration: underline;
+        }
+
+        .caption a:hover {
+            color: #692041;
+            text-shadow: 1.5px 1.5px #CA9849;
+            text-decoration: underline;
+        }
+
+        .video-embed {
+            margin-top: 15px;
+        }
+
+        .video-embed iframe {
+            width: 720px;
+            height: 405px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-text">
+        <h1>A NEW THING (in weeksville, NY, 2024)</h1>
+        <p>by <a href="https://kovid-pal-odouard.github.io" class="link-element">Kovid Pal Odouard</a>!</p>
+    </div>
+
+    <div class="caption" style="margin-bottom: 15px;">
+        <p>a long time coming!</p>
+    </div>
+
+    <div class="caption" style="margin-bottom: 15px;">
+        <h2>from fish to postcoloniality: archive 1</h2>
+        <p>yay! using the free storage that is youtube as an archive for my thinking on this project! <a href="https://www.youtube.com/watch?v=E17Wp6EmXGY" class="link-element">LINK</a></p>
+    </div>
+
+    <div class="video-embed">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/E17Wp6EmXGY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
