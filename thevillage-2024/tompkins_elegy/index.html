@@ -147,21 +147,24 @@
         .images {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centers the sets */
-            gap: 20px; /* Adds space between sets */
+            align-items: center; /* Centers the image sets */
+            gap: 20px; /* Space between sets */
             margin: 0 auto;
+            width: 90%; /* Ensures images scale properly within the container */
         }
 
         .image-set {
             display: flex;
             justify-content: center; /* Centers images in each set */
-            gap: 15px; /* Space between images */
+            gap: 15px; /* Guarantees a 15px gap between images */
+            flex-wrap: wrap; /* Allows images to wrap if needed */
         }
 
         .image-set img {
-            height: 300px; /* Ensures uniform height */
-            width: auto; /* Prevents distortion */
-            object-fit: cover; /* Keeps aspect ratio */
+            max-width: 100%; /* Ensures images don’t overflow */
+            height: auto; /* Maintains aspect ratio */
+            flex-grow: 1; /* Ensures images take up available space proportionally */
+            object-fit: contain; /* Ensures full image is visible */
         }
     </style>
 </head>
@@ -205,9 +208,9 @@
 
       <div class="images">
           <div class="image-set">
-              <img src="1.1_ladybird.JPG" alt="ladybird 1">
-              <img src="1.2_ladybird.JPG" alt="ladybird 2">
-          </div>
+              <img src="1.1_ladybird.JPG" alt="ladybird">
+              <img src="1.2_ladybird.JPG" alt="ladybird">
+            </div>
           <div class="image-set">
               <img src="2.1_st_marks.JPG" alt="st marks">
               <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
@@ -229,6 +232,9 @@
           </div>
       </div>
 
+      <div class="essay">
+          <p class="caption">^ the vibes on st marks place, 2024</p>
+      </div>
 
 
     <div class="essay", style="margin-top:50px; margin-bottom:80px">
