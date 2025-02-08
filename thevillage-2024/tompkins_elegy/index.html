@@ -145,26 +145,27 @@
             margin-bottom: 0;
         }
         .images {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centers the image sets */
-            gap: 20px; /* Space between sets */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ensures images fit dynamically */
+            justify-content: center; /* Centers the grid */
+            align-items: center; /* Ensures vertical alignment */
+            gap: 15px; /* Ensures a 15px gap between images */
+            width: 90%; /* Ensures images fit within the container */
             margin: 0 auto;
-            width: 90%; /* Ensures images scale properly within the container */
         }
 
         .image-set {
             display: flex;
-            justify-content: center; /* Centers images in each set */
-            gap: 15px; /* Guarantees a 15px gap between images */
-            flex-wrap: wrap; /* Allows images to wrap if needed */
+            justify-content: center;
+            gap: 15px;
         }
 
         .image-set img {
-            max-width: 100%; /* Ensures images don’t overflow */
-            height: auto; /* Maintains aspect ratio */
-            flex-grow: 1; /* Ensures images take up available space proportionally */
-            object-fit: contain; /* Ensures full image is visible */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Adjust this dynamically as needed */
+            width: auto; /* Prevents distortion */
+            flex-grow: 1;
+            object-fit: contain;
         }
     </style>
 </head>
