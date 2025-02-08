@@ -143,30 +143,22 @@
             text-decoration: underline;
             margin-top: 0;
             margin-bottom: 0;
-        }
-        .images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ensures images fit dynamically */
-            justify-content: center; /* Centers the grid */
-            align-items: center; /* Ensures vertical alignment */
-            gap: 15px; /* Ensures a 15px gap between images */
-            width: 90%; /* Ensures images fit within the container */
-            margin: 0 auto;
-        }
+          }
 
-        .image-set {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
+          .image-container {
+              display: flex;
+              justify-content: center;
+              gap: 15px;
+              max-width: 1080px;
+              width: 100%; /* Ensure the container fills the available space */
+          }
 
-        .image-set img {
-            height: auto; /* Maintain aspect ratio */
-            max-height: 300px; /* Adjust this dynamically as needed */
-            width: auto; /* Prevents distortion */
-            flex-grow: 1;
-            object-fit: contain;
-        }
+          .image-container img {
+              width: auto;
+              height: 100%; /* Makes sure the images take up the full available height */
+              max-width: 100%; /* Prevents images from overflowing horizontally */
+              object-fit: contain;
+          }
     </style>
 </head>
 <body>
@@ -207,31 +199,29 @@
         </p>
       </div>
 
-      <div class="images">
-          <div class="image-set">
-              <img src="1.1_ladybird.JPG" alt="ladybird">
-              <img src="1.2_ladybird.JPG" alt="ladybird">
-            </div>
-          <div class="image-set">
-              <img src="2.1_st_marks.JPG" alt="st marks">
-              <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
-          </div>
-          <div class="image-set">
-              <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
-          </div>
-          <div class="image-set">
+        <div class="image-container">
+            <img src="1.1_ladybird.JPG" alt="ladybird">
+            <img src="1.2_ladybird.JPG" alt="ladybird">
+        </div>
+        <div class="image-container">
+            <img src="2.1_st_marks.JPG" alt="st marks">
+            <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
+        </div>
+        <div class="image-container">
+            <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
+        </div>
+        <div class="image-container">
               <img src="3.1_poetica_coffee.JPG" alt="poetica coffee">
               <img src="3.2_search&destroy.JPG" alt="search&destroy">
-          </div>
-          <div class="image-set">
+        </div>
+        <div class="image-container">
               <img src="4.1_search&destroy.JPG" alt="search&destroy">
               <img src="4.2_romeo's.JPG" alt="romeo's">
-          </div>
-          <div class="image-set">
+        </div>
+        <div class="image-container">
               <img src="5.1_fancy_sushi.JPG" alt="sushi">
               <img src="5.2_st_marks.JPG" alt="st marks">
-          </div>
-      </div>
+        </div>
 
       <div class="essay">
           <p class="caption">^ the vibes on st marks place, 2024</p>
