@@ -146,17 +146,22 @@
         }
         .images {
             display: flex;
-            justify-content: center; /* Center the image group */
-            align-items: flex-start;
-            gap: auto; /* Allow natural spacing */
-            margin-top: 15px;
-            width: 1080px;
+            flex-direction: column;
+            align-items: center; /* Centers the sets */
+            gap: 20px; /* Adds space between sets */
+            margin: 0 auto;
         }
 
-        .images img {
-            height: 400px; /* Set a fixed height for uniformity */
-            width: auto; /* Maintain aspect ratio */
-            object-fit: cover;
+        .image-set {
+            display: flex;
+            justify-content: center; /* Centers images in each set */
+            gap: 15px; /* Space between images */
+        }
+
+        .image-set img {
+            height: 300px; /* Ensures uniform height */
+            width: auto; /* Prevents distortion */
+            object-fit: cover; /* Keeps aspect ratio */
         }
     </style>
 </head>
@@ -199,32 +204,31 @@
       </div>
 
       <div class="images">
-          <img src="1.1_ladybird.JPG" alt="ladybird 1">
-          <img src="1.2_ladybird.JPG" alt="ladybird 2">
-      </div>
-      <div class="images">
-          <img src="2.1_st_marks.JPG" alt="st marks">
-          <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
-      </div>
-      <div class="images">
-          <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
-      </div>
-      <div class="images">
-          <img src="3.1_poetica_coffee.JPG" alt="poetica coffee">
-          <img src="3.2_search&destroy.JPG" alt="search&destroy">
-      </div>
-      <div class="images">
-          <img src="4.1_search&destroy.JPG" alt="search&destroy">
-          <img src="4.2_romeo's.JPG" alt="romeo's">
-      </div>
-      <div class="images">
-          <img src="5.1_fancy_sushi.JPG" alt="sushi">
-          <img src="5.2_st_marks.JPG" alt="st marks">
+          <div class="image-set">
+              <img src="1.1_ladybird.JPG" alt="ladybird 1">
+              <img src="1.2_ladybird.JPG" alt="ladybird 2">
+          </div>
+          <div class="image-set">
+              <img src="2.1_st_marks.JPG" alt="st marks">
+              <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
+          </div>
+          <div class="image-set">
+              <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
+          </div>
+          <div class="image-set">
+              <img src="3.1_poetica_coffee.JPG" alt="poetica coffee">
+              <img src="3.2_search&destroy.JPG" alt="search&destroy">
+          </div>
+          <div class="image-set">
+              <img src="4.1_search&destroy.JPG" alt="search&destroy">
+              <img src="4.2_romeo's.JPG" alt="romeo's">
+          </div>
+          <div class="image-set">
+              <img src="5.1_fancy_sushi.JPG" alt="sushi">
+              <img src="5.2_st_marks.JPG" alt="st marks">
+          </div>
       </div>
 
-      <div class="essay">
-          <p class="caption">This is an example of a caption with the given styles.</p>
-      </div>
 
 
     <div class="essay", style="margin-top:50px; margin-bottom:80px">
