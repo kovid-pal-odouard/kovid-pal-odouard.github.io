@@ -145,18 +145,18 @@
         }
         .images {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center the image group */
             align-items: flex-start;
+            gap: auto; /* Allow natural spacing */
             margin-top: 15px;
             width: 1080px;
         }
 
         .images img {
-            height: calc((1080px - 15px * (var(--n) - 1)) / var(--n)); /* Max possible height */
+            height: 400px; /* Set a fixed height for uniformity */
             width: auto; /* Maintain aspect ratio */
             object-fit: cover;
         }
-
     </style>
 </head>
 <body>
@@ -198,35 +198,32 @@
       </div>
 
       <div class="images">
-        <style="--n:2;">
           <img src="1.1_ladybird.JPG" alt="ladybird 1">
           <img src="1.2_ladybird.JPG" alt="ladybird 2">
-        </style>
-        <style="--n:2;">
+      </div>
+      <div class="images">
           <img src="2.1_st_marks.JPG" alt="st marks">
           <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
-        </style>
-        <style="--n:2;">
+      </div>
+      <div class="images">
           <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
-        </style>
-        <style="--n:2;">
+      </div>
+      <div class="images">
           <img src="3.1_poetica_coffee.JPG" alt="poetica coffee">
           <img src="3.2_search&destroy.JPG" alt="search&destroy">
-        </style="">
-        <style="--n:2;">
+      </div>
+      <div class="images">
           <img src="4.1_search&destroy.JPG" alt="search&destroy">
           <img src="4.2_romeo's.JPG" alt="romeo's">
-        </style>
-        <style="--n:2;">
+      </div>
+      <div class="images">
           <img src="5.1_fancy_sushi.JPG" alt="sushi">
           <img src="5.2_st_marks.JPG" alt="st marks">
-        </style>
-      </div
+      </div>
 
-      <div class="essay", style="margin-top:20px; margin-bottom:20px">
-        <caption>
-              ^ the vibes on st marks, 2024.
-        </caption>
+      <div class="essay caption">
+          <p> This is an example of a caption with the given styles.</p>
+      </div>
 
     <div class="essay", style="margin-top:50px; margin-bottom:80px">
         <p>
