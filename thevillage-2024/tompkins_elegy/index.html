@@ -144,27 +144,26 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-
-          .image-container {
-              width: 720px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              overflow: hidden;
+        .image-container {
+            width: 720px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-          .image-container img {
-              height: auto;
-              object-fit: contain;
-              margin-right: 20px; /* Ensures 20px margin between images */
+        .image-container img {
+            flex-grow: 1;
+            height: auto;
+            max-width: calc((720px - (20px * (var(--num-images, 1) - 1))) / var(--num-images, 1));
+            margin-right: 20px;
         }
-          .image-container img:last-child {
-              margin-right: 0; /* Removes margin from the last image */
+        .image-container img:last-child {
+            margin-right: 0;
         }
     </style>
 </head>
 <body>
     <div class="heading-text" style="margin-bottom: 60px;">
-        ##8:46 pm upload##
+        ##9:12 pm upload##
         <h1>STUFF I MADE IN THE VILLAGE, NY ~ 2024</h1>
         <p>by <a href="https://kovid-pal-odouard.github.io" class="link-element">Kovid Pal Odouard</a>!</p>
     </div>
@@ -201,26 +200,26 @@
         </p>
       </div>
 
-        <div class="image-container">
+        <div class="image-container" style="--num-images: 2;">
             <img src="https://kovid-pal-odouard.github.io/thevillage-2024/tompkins_elegy/1.1_ladybird.jpg" alt="ladybird">
             <img src="https://kovid-pal-odouard.github.io/thevillage-2024/tompkins_elegy/1.2_ladybird.jpg" alt="ladybird">
         </div
-        <div class="image-container">
+        <div class="image-container" style="--num-images: 2;">
             <img src="2.1_st_marks.JPG" alt="st marks">
             <img src="2.2_physical_graffitea.JPG" alt="physical graffitea">
         </div>
-        <div class="image-container">
+        <div class="image-container" style="--num-images: 1;">
             <img src="2.3_mangomango_search&destroy.JPG" alt="mangomango">
         </div>
-        <div class="image-container">
+        <div class="image-container" style="--num-images: 2;">
               <img src="3.1_poetica_coffee.JPG" alt="poetica coffee">
               <img src="3.2_search&destroy.JPG" alt="search&destroy">
         </div>
-        <div class="image-container">
+        <div class="image-container style="--num-images: 2;"">
               <img src="4.1_search&destroy.JPG" alt="search&destroy">
               <img src="4.2_romeo's.JPG" alt="romeo's">
         </div>
-        <div class="image-container">
+        <div class="image-container" style="--num-images: 2;">
               <img src="5.1_fancy_sushi.JPG" alt="sushi">
               <img src="5.2_st_marks.JPG" alt="st marks">
         </div>
@@ -228,14 +227,14 @@
           <p class="caption">^ the vibes on st marks place, 2024</p>
       </div>
 
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 1;">
             <img src="6.1_oldtompkins.jpg" alt="tompkins">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="7.1_oldtompkins.webp" alt="tompkins">
             <img src="7.2_oldtompkins.webp" alt="tompkins">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="8.1_oldtompkins.webp" alt="tompkins">
             <img src="8.2_oldtompkins.webp" alt="tompkins">
       </div>
@@ -243,39 +242,39 @@
           <p class="caption">^ the vibes at tompkins in the late '80s and early '90s</p>
       </div>
 
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="9.1_tompkins.JPG" alt="tompkins">
             <img src="9.2_tompkins.JPG" alt="tompkins">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="10.1_tompkins.JPG" alt="tompkins">
             <img src="10.2_tompkins.JPG" alt="tompkins">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="11.1_tompkins.JPG" alt="tompkins">
       </div>
       <div class="essay" style="margin-bottom: 60px;">
           <p class="caption">^ the vibes at tompkins in 2024</p>
       </div>
 
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="12.1_loisaida.jpg" alt="loisaida">
             <img src="12.2_loisaida.JPG" alt="loisaida">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="13.1_loisaida.jpg" alt="loisaida">
             <img src="13.2_loisaida.jpg" alt="loisaida">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="14.1_loisaida.jpg" alt="loisaida">
             <img src="14.2_loisaida.jpg" alt="loisaida">
       </div>
-      <div class="image-container">
+      <div class="image-container" style="--num-images: 2;">
             <img src="15.1_loisaida.jpg" alt="loisaida">
             <img src="15.2_loisaida.jpg" alt="loisaida">
             <img src="15.3_loisaida.jpg" alt="loisaida">
       </div>
-      <div class="image-container">
+      <div class="image-container"style="--num-images: 2;">
             <img src="16.1_loisaida.JPG" alt="loisaida">
             <img src="16.2_loisaida.JPG" alt="loisaida">
       </div>
