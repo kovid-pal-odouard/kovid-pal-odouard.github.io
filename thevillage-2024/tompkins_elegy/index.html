@@ -143,23 +143,22 @@
             text-decoration: underline;
             margin-top: 0;
             margin-bottom: 0;
-          }
 
-          .image-container {
-              display: flex;
-              justify-content: center;
-              gap: 15px;
-              max-width: 720px;
-              width: 100%;
-              margin-bottom: 20px; /* Adds 20px vertical margin below the image container */
-          }
-
-          .image-container img {
-              width: auto;
-              height: 100%;
-              max-width: 100%;
-              object-fit: contain;
-          }
+            }
+            .image-container {
+                width: 720px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .image-container img {
+                flex-grow: 1;
+                max-height: 200px; /* Adjust as needed */
+                object-fit: contain;
+                margin: 10px; /* Since margin applies to both sides, total margin per image = 20px */
+                width: calc((720px - ((N - 1) * 20px)) / N); /* Adjusts width dynamically */
+            }
     </style>
 </head>
 <body>
