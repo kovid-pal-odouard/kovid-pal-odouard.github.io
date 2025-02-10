@@ -143,20 +143,22 @@
             text-decoration: underline;
             margin-top: 0;
             margin-bottom: 0;
-
         }
+
           .image-container {
               width: 720px;
               display: flex;
               justify-content: space-between;
               align-items: center;
-              flex-wrap: wrap;
+              overflow: hidden;
         }
           .image-container img {
-              flex-grow: 1;
+              height: auto;
               object-fit: contain;
-              margin: 10px; /* Since margin applies to both sides, total margin per image = 20px */
-              width: calc((720px - ((N - 1) * 20px)) / N); /* Adjusts width dynamically */
+              margin-right: 20px; /* Ensures 20px margin between images */
+        }
+          .image-container img:last-child {
+              margin-right: 0; /* Removes margin from the last image */
         }
     </style>
 </head>
