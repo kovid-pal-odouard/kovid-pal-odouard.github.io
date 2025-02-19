@@ -183,6 +183,32 @@
             z-index: -1;
             box-shadow: 3px 3px #dad4ed;
         }
+        }
+        .link4-element {
+            position: relative;
+            display: inline-block;
+            font-family: 'Pixelon', sans-serif;
+            font-size: 20px;
+            color: #AE3179;
+            text-shadow: 2px 2px #D5A454;
+            padding: 8px; /* Add padding for background */
+            background-color: #EDD2E3;
+            text-decoration: none; /* Remove underline from text */
+        }
+        .link4-element:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        .link4-element::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background-color: #d5a454;
+            width: 100%; /* Adjust width to cover full element */
+            height: 100%; /* Adjust height to cover full element */
+            z-index: -1;
+            box-shadow: 3px 3px #531639;
+      }
         @keyframes textResize {
             0%, 100% {
                 font-size: 1.5em;
@@ -233,7 +259,7 @@
             FROM FISH TO POSTCOLONIALITY.
         </a>
     </div>
-    <div class="link2-container">
+    <div class="link4-container">
         <a href="https://kovid-pal-odouard.github.io/washington-heights-dining-table/" class="link2-element" target="_blank">
             stuff  from the wash heights dining table: 2024-2025
         </a>
