@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://kovid-pal-odouard.github.io/sitemap.xml
